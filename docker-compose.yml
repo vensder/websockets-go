@@ -1,0 +1,14 @@
+version: '2'
+services:
+  wss-app:
+    image: vensder/websockets-go
+    ports:
+     - "8080:8080"
+  nginx:
+    image: nginx:stable-alpine
+    volumes:
+     - "./nginx:/etc/nginx/conf.d"
+    links:
+     - wss-app
+    ports:
+     - "80:80"
