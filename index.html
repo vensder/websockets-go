@@ -10,7 +10,7 @@
                 if (loc.protocol == "https:") {
                     ws_prefix = "wss";
                 } 
-                var ws = new WebSocket(ws_prefix + "://localhost:8080/echo");
+                var ws = new WebSocket(ws_prefix + "://" + loc.hostname + ":8080/echo");
                 ws.onmessage = function(e) {
                     console.log("Received message:" + event.data);
                 };
