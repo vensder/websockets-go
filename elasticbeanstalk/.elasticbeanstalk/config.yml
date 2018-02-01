@@ -1,0 +1,21 @@
+branch-defaults:
+  master:
+    environment: wss-env-dev
+environment-defaults:
+  wss-dev:
+    branch: master
+    repository: wss
+global:
+  application_name: wss
+  branch: master
+  default_ec2_keyname: my-ssh-key
+  default_platform: Multi-container Docker 17.09.1-ce (Generic)
+  default_region: us-west-2
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  repository: wss
+  sc: git
+  workspace_type: Application
