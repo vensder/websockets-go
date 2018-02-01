@@ -18,4 +18,5 @@ Open https://localhost and send test messages via wss.
 
 Original link: https://github.com/golang-samples/websocket.git
 
+## AWS Elastic Beanstalk
 For testing ws/wss on AWS Elastic Beanstalk environment use content of [elasticbeanstalk](elasticbeanstalk) directory as template.
